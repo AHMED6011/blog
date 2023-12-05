@@ -1,0 +1,28 @@
+{
+  "name": "blog-front-end",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint . --ext .vue,.js,.jsx,.cjs,.mjs --fix --ignore-path .gitignore",
+    "format": "prettier --write src/",
+    "deploy": "gh-pages -d dist"
+  },
+  "dependencies": {
+    "axios": "^1.5.1",
+    "sweetalert": "^2.1.2",
+    "vue": "^3.3.4",
+    "vue-router": "^4.2.4",
+    "vue3-cookies": "^1.0.6"
+  },
+  "devDependencies": {
+    "@vue/eslint-config-prettier": "^8.0.0",
+    "eslint": "^8.49.0",
+    "eslint-plugin-vue": "^9.17.0",
+    "gh-pages": "^6.0.0",
+    "prettier": "^3.0.3",
+    "vite": "^4.4.9"
+  }
+}
