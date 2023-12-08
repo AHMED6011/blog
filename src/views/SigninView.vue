@@ -78,11 +78,7 @@
             />
             <button class="btn btn-primary" @click="updateUserInfo">Edit My Account</button>
             <button class="btn btn-primary m-3" @click.prevent="logOut">Log Out</button>
-            <!-- <button class="btn btn-primary m-3"> -->
-            <RouterLink class="btn btn-primary m-3" :to="{ name: 'forgotpass' }"
-              >Forgot Password</RouterLink
-            >
-            <!-- </button> -->
+
             <button class="btn btn-primary" @click.prevent="deleteAccount">
               Delete Your Account
             </button>

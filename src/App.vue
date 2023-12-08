@@ -14,6 +14,9 @@
         <li class="nav-item">
           <RouterLink to="/signup" class="nav-link fs-5">Sign Up</RouterLink>
         </li>
+        <li class="nav-item">
+          <RouterLink to="/test" class="nav-link fs-5">Test</RouterLink>
+        </li>
       </ul>
     </header>
     <RouterView />

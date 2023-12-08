@@ -26,7 +26,7 @@
           </div>
         </div>
       </div>
-      <div class="row text-center justify-content-between">
+      <div v-if="!blogs.length == 0" class="row text-center justify-content-between">
         <div v-for="blog in blogs" :key="blog.id" class="col-3">
           <div class="card" style="width: 18rem">
             <img
@@ -58,6 +58,62 @@
                   Edit Blog
                 </RouterLink>
               </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div v-else class="row text-center justify-content-between">
+        <div class="col-3">
+          <div class="card" aria-hidden="true">
+            <div class="fake-img"></div>
+            <div class="card-body">
+              <h5 class="card-title placeholder-glow">
+                <span class="placeholder col-6"></span>
+              </h5>
+              <p class="card-text placeholder-glow">
+                <span class="placeholder col-7"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder col-8"></span>
+              </p>
+              <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card" aria-hidden="true">
+            <div class="fake-img"></div>
+            <div class="card-body">
+              <h5 class="card-title placeholder-glow">
+                <span class="placeholder col-6"></span>
+              </h5>
+              <p class="card-text placeholder-glow">
+                <span class="placeholder col-7"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder col-8"></span>
+              </p>
+              <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
+            </div>
+          </div>
+        </div>
+        <div class="col-3">
+          <div class="card" aria-hidden="true">
+            <div class="fake-img"></div>
+            <div class="card-body">
+              <h5 class="card-title placeholder-glow">
+                <span class="placeholder col-6"></span>
+              </h5>
+              <p class="card-text placeholder-glow">
+                <span class="placeholder col-7"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-4"></span>
+                <span class="placeholder col-6"></span>
+                <span class="placeholder col-8"></span>
+              </p>
+              <a class="btn btn-primary disabled placeholder col-6" aria-disabled="true"></a>
             </div>
           </div>
         </div>
@@ -110,3 +166,11 @@ export default {
   }
 }
 </script>
+
+<style>
+.fake-img {
+  width: 100%;
+  height: 250px;
+  background-color: #868e96;
+}
+</style>
